@@ -194,13 +194,15 @@
             frame += '<style>';
             frame += '.lead-frame-wrapper {' + style + 'color: #333; font-size: 14px; font-family: "Lato", Helvetica, Arial, sans-serif; padding: 75px; background-color: #f6f6f6;}';
             frame += '.lead-frame-wrapper * { box-sizing: border-box; } ';
-            frame += '.lead-frame-container { overflow: hidden; } ';
-            frame += '.lead-frame-container .custom-title { font-size: 50px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
-            frame += '.lead-frame-container .title-slogan { font-size: 20px; font-weight: lighter; color: #878787; text-align: left; line-height: 1.5; }';
+            frame += '.lead-frame-container { overflow: hidden; width: 70%; } ';
+            frame += '.lead-frame-container .custom-title { font-family: "Lato"; font-size: 50px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
+            frame += '.lead-frame-container .title-slogan { font-size: 20px; font-weight: lighter; color: #878787; line-height: 1.5; margin-bottom: 35px; }';
+            frame += '.lead-frame-container .info-title { font-size: 20px; font-weight: bold; color: #878787; line-height: 1.5; margin-bottom: 10px; }';
+            frame += '.lead-frame-container .info-title-green {color: #37c7b4;}';
             frame += '.lead-frame-container .custom-small-title { font-size: 20px; font-weight: bold; line-height: 1.1; margin: 5px 0 8px; color: #292929; text-align: left; } ';
-            frame += '.lead-frame-container select { clear: both; font-size: 20px; font-family: open-sans; color: #b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 19px; width: 100%; border-radius: 8px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; height: 76px; float: left; text-align: left; background: white url("images/down-arrow.png") no-repeat scroll 100% center / 16% auto; }';
+            frame += '.lead-frame-container select { font-size: 20px; font-family: open-sans; color: #b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 19px; width: 100%; border-radius: 8px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; height: 76px; background: white url("images/down-arrow.png") no-repeat scroll 100% center / 14% auto; }';
             frame += '.lead-frame-container input[type=text] { width: 100%; max-width: 150px; margin-bottom: 8px; height: 30px; padding: 4px 6px; } ';
-            frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; margin: 24px 0 0 -1%; padding: 14px 25px; width: 125px; height: 47px; float: left; clear: both; text-decoration: none; }';
+            frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; margin: 24px 0 0 -1%; padding: 15px 25px; width: 126px; height: 50px; float: left; clear: both; text-decoration: none; }';
             frame += '.lead-frame-container .align-right { float: right; } .lead-frame-container .align-left { float: left; } ';
             frame += '.lead-frame-container label.regular-checkbox-label { display: inline; } .lead-frame-container .regular-checkbox { display: none; }';
             frame += '.lead-frame-container .regular-checkbox + label { background-color: #fafafa; border: 1px solid #cacece; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding: 9px; border-radius: 3px; display: inline-block; position: relative; margin: 0 7px 5px 5px; } ';
@@ -251,13 +253,13 @@
             else if (step < 4)
                 temp += '<button name="' + name + '" id="submit_lead_' + name + '" class="lead-frame-btn">Continue</button>';
 
-            temp += '<div style="clear: both;"></div>'
+            temp += '<div style="clear: both;"></div>';
             temp += '</div></div>';
             return temp;
         },
 
         _car_frame: function () {
-            var years = []
+            var years = [];
             var current_year = new Date().getFullYear();
             for (var n = current_year; n >= 2000; --n) {
                 years.push(n);
@@ -265,28 +267,38 @@
             html = '<h3 class="custom-title">See how much you could be saving</h3>';
             html += '<h5 class="title-slogan">Compare your current auto insurance rate with other companies in your area and <br> see if you qualify for any discounts!</h5>';
             html += '<h4 class="custom-small-title">What car do you drive?</h4>';
-            car_year = this._select_field(years, 'car_year', 'car_year', 'car_year', 'Select Year', 'margin-right: 5px;');
-            car_make = this._select_field(this.car_make, 'car_make', 'car_make', 'car_make', 'Select Make', 'margin-right: 5px; cursor: not-allowed;');
+            car_year = this._select_field(years, 'car_year', 'car_year', 'car_year', 'Select Year');
+            car_make = this._select_field(this.car_make, 'car_make', 'car_make', 'car_make', 'Select Make', 'cursor: not-allowed;');
             car_model = this._select_field(this.car_model, 'car_model', 'car_model', 'car_model', 'Select Model', 'cursor: not-allowed;');
-            html += '<div style="text-align: center">' + car_year + car_make + car_model + '</div>';
+            html += '<div>' + car_year + car_make + car_model + '</div>';
             return this._frame_template('1', 'car_info', html);
         },
 
         _state_frame: function (inst) {
-            html = '<h3 class="custom-title"> What state do you currently live in? </h3>';
+            html = '<h3 class="custom-title"> See how much you could be saving </h3>';
+            html += '<h6 class="info-title">Your vehicle</h6>';
+            html += '<strong>' + this.step_data['car_year'] + ' ' + this.step_data['car_make'] + ' ' + this.step_data['car_model'] + '</strong>';
             car_state = this._select_field(this.car_state, 'car_state', 'car_state', 'car_state', 'Select State', '');
-            html += '<div style="text-align: center">' + car_state + '</div>';
+            html += '<div>' + car_state + '</div>';
             return this._frame_template('2', 'car_state', html);
         },
 
 
         _insurance_frame: function (inst) {
-            html = '<h3 class="custom-title"> Tel us about your insurance </h3>';
+            html = '<h3 class="custom-title"> See how much you could be saving </h3>';
+            html += '<div style="width: 100%;>';
+            html += '<div style="width: 250px; float:left;">' + '<h6 class="info-title">Your vehicle</h6>' ;
+            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">Honda Civic</h6>';
+            html += '</div>';
+            html += '<div style="width: 250px; float: right;">';
+            html += '<h6 class="info-title">State</h6>';
+            html += '<h6 class="info-title info-title-green">Caliifornia</h6>' + '</div>';
+            html += '</div>';
             inc_company = this._select_field(this.inc_company, 'inc_company', 'inc_company', 'inc_company', 'Select', '');
             premium = this._text_field('inc_premium', 'inc_premium', 'inc_premium', '');
-            html += '<div style="text-align: center">' +
-                "<p style='margin: 0 0 8px;'> Your current insurance company </p>" + inc_company +
-                "<p style='margin: 0 0 8px;'>Your current premium (per month)</p>" + premium + '</div>';
+            html += '<div>' +
+                "<p> Your current insurance company </p>" + inc_company +
+                "<p>Your current premium (per month)</p>" + premium + '</div>';
             return this._frame_template('3', 'insurance_info', html);
         },
 
@@ -344,7 +356,7 @@
                 4: {text: '10+ years of experience', weight: 10},
                 5: {text: '5+ Family', weight: 7.2},
                 6: {text: 'Air bag', weight: 4}
-            }
+            },
             html = '<p style="margin: 0 0 6px;"> Check discounts to see the possible savings: </p>';
             $.each(discounts, function (key, value) {
                 html += '<div style="display: inline-flex;">';
