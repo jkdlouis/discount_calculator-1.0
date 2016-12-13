@@ -190,17 +190,17 @@
         },
         _set_initial_widget: function (target, inst) {
             var style = this._get_style(inst) + '; ';
-            var frame = '<div class="lead-frame-wrapper" id="' + this._frameId + '"> <div class="lead-frame-container" id="' + this._frameContainerId + '"></div></div>';
+            var frame = '<div class="lead-frame-wrapper" id="' + this._frameId + '"> <div class="lead-frame-container container-fluid" id="' + this._frameContainerId + '"></div></div>';
             frame += '<style>';
-            frame += '.lead-frame-wrapper {' + style + 'color: #333; font-size: 14px; font-family: "Lato", Helvetica, Arial, sans-serif; padding: 75px 0; }';
+            frame += '.lead-frame-wrapper {' + style + 'color: #333; font-size: 14px; font-family: "Lato", Helvetica, Arial, sans-serif;}';
             frame += '.lead-frame-wrapper * { box-sizing: border-box; } ';
-            frame += '.lead-frame-container { overflow: hidden; width: 100%; height: 100%; background-color: #f6f6f6; }';
-            frame += '.lead-frame-container .form-container {width: 55%; float:left; padding-top: 75px; padding-left: 54px;}';
-            frame += '.lead-frame-container .premium-container { width: 45%; height: 100%; float: right; background: url("images/green-background.png") no-repeat center; background-size: cover; padding: 90px 120px; }';
-            frame += '.lead-frame-container .premium-container .premium-number { font-weight: bold; font-size: 50px; color: #ffffff; margin-left: 19px;}';
-            frame += '.lead-frame-container .premium-container .premium-img { margin-bottom: 27px;}';
-            frame += '.lead-frame-container .col-xs-4 { width: 25%;}';
-            frame += '.lead-frame-container .custom-title { font-family: "Lato"; font-size: 50px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
+            frame += '.lead-frame-container { overflow-x: hidden; width: 100%; height: 100%; background-color: #f6f6f6; }';
+            frame += '.lead-frame-container .form-container {width: 55%; float:left; padding-top: 33px; padding-left: 54px;}';
+            frame += '.lead-frame-container .premium-container { width: 45%; height: 100%; float: right; text-align: center; background: url("images/green-background.png") no-repeat center; background-size: cover; padding: 55px 120px; }';
+            frame += '.lead-frame-container .mobile-premium-container { width: 100%; height: 450px; padding: 10px; background: url("images/mobile-green-background.png") no-repeat center;  }';
+            frame += '.lead-frame-container .premium-number { font-weight: bold; font-size: 50px; color: #ffffff; }';
+            frame += '.lead-frame-container .premium-img { margin-bottom: 27px; margin-right: 19px;}';
+            frame += '.lead-frame-container .custom-title { font-family: "Lato"; font-size: 45px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
             frame += '.lead-frame-container .title-slogan { font-size: 20px; font-weight: lighter; color: #878787; line-height: 1.5; margin-bottom: 35px; }';
             frame += '.lead-frame-container .info-title { font-size: 20px; font-weight: bold; color: #878787; line-height: 1.5; margin-bottom: 15px; margin-top: 0; }';
             frame += '.lead-frame-container .info-title-green {color: #37c7b4;}';
@@ -210,11 +210,13 @@
             frame += '.lead-frame-container input[type=text] { width: 100%; max-width: 271px; margin-bottom: 8px; height: 55px; padding: 4px 6px; } ';
             frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; margin: 24px 0 24px 3%; padding: 10px 25px; width: 126px; height: 50px; float: left; text-decoration: none; }';
             frame += '.lead-frame-container .align-right { float: right; } .lead-frame-container .align-left { float: left; } ';
+            frame += '.lead-frame-container .discount-services { padding-top: 15px; -moz-column-count:2; -webkit-column-count:2; column-count:2;}';
             frame += '.lead-frame-container label.regular-checkbox-label { display: inline; } .lead-frame-container .regular-checkbox { display: none; }';
-            frame += '.lead-frame-container .regular-checkbox + label { background-color: #fafafa; border: 1px solid #cacece; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding: 9px; border-radius: 3px; display: inline-block; position: relative; margin: 0 7px 5px 5px; } ';
-            frame += '.lead-frame-container .regular-checkbox + label:active, .lead-frame-container .regular-checkbox:checked + label:active { box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); } ';
+            frame += '.lead-frame-container .regular-checkbox + label { background-color: white; border: 1px solid #cccccc; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding: 9px; display: inline-block; position: relative; margin: 0 7px 5px 5px; } ';
+            frame += '.lead-frame-container .regular-checkbox + label:active, .lead-frame-container .regular-checkbox:checked + label:active { box-shadow: 0 1px 3px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label { background-color: #e9ecee; border: 1px solid #adb8c0; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); color: #99a1a7; } ';
-            frame += '.lead-frame-container .regular-checkbox:checked + label:after { content: "\u2714"; font-size: 14px; position: absolute; top: 0px; left: 3px; color: #99a1a7; } ';
+            frame += '.lead-frame-container .regular-checkbox:checked + label:after { content: "\u2714"; font-size: 14px; position: absolute; top: 0px; left: 2px; color: #99a1a7; } ';
+            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 450px)and (orientation: portrait) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container .form-container {width: 100%; padding: 10px; } .lead-frame-container .mobile-premium-container { margin-top: 10px; height: 272px; } .lead-frame-container .premium-img { margin-bottom: 0; margin-top: 65px; } .lead-frame-container .premium-number {font-size: 40px;} }';
             frame += '</style>';
             $(target).html(frame);
         },
@@ -270,8 +272,11 @@
             for (var n = current_year; n >= 2000; --n) {
                 years.push(n);
             }
-            html = '<div class="form-container">';
-            html += '<h3 class="custom-title">See how much you could be saving</h3>';
+
+            html = '<div class="row">';
+            html += '<div class="col-xs-12">';
+            html += '<div class="form-container">';
+            html += '<p class="custom-title">See how much you could be saving</p>';
             html += '<h5 class="title-slogan">Compare your current auto insurance rate with other companies in your area and <br> see if you qualify for any discounts!</h5>';
             html += '<h4 class="custom-small-title">What car do you drive?</h4>';
             car_year = this._select_field(years, 'car_year', 'car_year', 'car_year', 'Select Year');
@@ -279,27 +284,58 @@
             car_model = this._select_field(this.car_model, 'car_model', 'car_model', 'car_model', 'Select Model', 'cursor: not-allowed;');
             html += '<div>' + car_year + car_make + car_model + '</div>';
             html += '</div>';
-            html += '<div class="premium-container text-center">';
+
+            html += '<div class="premium-container hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$</span>';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
             html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span>';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
             html += '<img class="premium-img" src="images/savings.png"><span class="premium-number">%</span>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            // mobile
+            html += '<div class="row visible-xs text-center">';
+
+            html += '<div class="mobile-premium-container">';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/dollar.png">';
+            html += '<h5 class="custom-small-title">Your current premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/money.png">';
+            html += '<h5 class="custom-small-title">Your possible premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/savings.png">';
+            html += '<h5 class="custom-small-title" >Your possible saving</h5>';
+            html += '<span class="premium-number">--%</span>';
+            html += '</div>';
+            html += '</div>';
+
             html += '</div>';
             return this._frame_template('1', 'car_info', html);
         },
 
         _state_frame: function (inst) {
-            html = '<div class="form-container">';
+
+            html = '<div class="row">';
+            html += '<div class="col-xs-12">';
+            html += '<div class="form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<h6 class="info-title">Your vehicle</h6>';
-            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">2016 Honda Civic</h6>';
+            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">' + this.step_data["car_year"] + " " + this.step_data["car_make"] + " " + this.step_data["car_model"] + '</h6>';
             html += '<h4 class="custom-small-title" style="margin-top: 56px;">Where do you live?</h4>';
             car_state = this._select_field(this.car_state, 'car_state', 'car_state', 'car_state', 'Select State', '');
             html += '<div>' + car_state + '</div>';
             html += '</div>';
-            html += '<div class="premium-container text-center">';
+
+
+            html += '<div class="premium-container hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$</span>';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
@@ -307,27 +343,57 @@
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
             html += '<img class="premium-img" src="images/savings.png"><span class="premium-number">%</span>';
             html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            // mobile
+
+            html += '<div class="row visible-xs text-center">';
+            html += '<div class="mobile-premium-container">';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/dollar.png">';
+            html += '<h5 class="custom-small-title">Your current premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/money.png">';
+            html += '<h5 class="custom-small-title">Your possible premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/savings.png">';
+            html += '<h5 class="custom-small-title" >Your possible saving</h5>';
+            html += '<span class="premium-number">--%</span>';
+            html += '</div>';
+            html += '</div>';
+
+            html += '</div>';
+
             return this._frame_template('2', 'car_state', html);
         },
 
 
         _insurance_frame: function (inst) {
-            html = '<div class="form-container">';
+
+            html = '<div class="row">';
+            html += '<div class="col-xs-12">';
+            html += '<div class="form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<div class="row">';
             html += '<div class="col-xs-4">' + '<h6 class="info-title">Your vehicle</h6>' ;
-            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">Honda Civic</h6>' + '</div>';
+            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;"></h6>' + '</div>';
             html += '<div class="col-xs-4">';
             html += '<h6 class="info-title">State</h6>';
-            html += '<h6 class="info-title info-title-green" style="margin-top: 0;">Caliifornia</h6>' + '</div>';
+            html += '<h6 class="info-title info-title-green" style="margin-top: 0;"></h6>' + '</div>';
             html += '</div>';
             inc_company = this._select_field(this.inc_company, 'inc_company', 'inc_company', 'inc_company', 'Select', '');
             premium = this._text_field('inc_premium', 'inc_premium', 'inc_premium', '');
             html += '<div>' +
-                "<p class='custom-small-title' style='padding-top: 58px;'> Your current insurance company </p>" + inc_company +
+                "<p class='custom-small-title'> Your current insurance company </p>" + inc_company +
                 "<p class='custom-small-title'>Your current premium (per month)</p>" + premium + '</div>';
             html += '</div>';
-            html += '<div class="premium-container text-center">';
+
+            html += '<div class="premium-container text-center hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$</span>';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
@@ -335,12 +401,41 @@
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
             html += '<img class="premium-img" src="images/savings.png"><span class="premium-number">%</span>';
             html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            // mobile
+
+            html += '<div class="row visible-xs text-center">';
+            html += '<div class="mobile-premium-container">';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/dollar.png">';
+            html += '<h5 class="custom-small-title">Your current premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/money.png">';
+            html += '<h5 class="custom-small-title">Your possible premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/savings.png">';
+            html += '<h5 class="custom-small-title" >Your possible saving</h5>';
+            html += '<span class="premium-number">--%</span>';
+            html += '</div>';
+            html += '</div>';
+
+            html += '</div>';
             return this._frame_template('3', 'insurance_info', html);
         },
 
         _comparison_frame: function () {
-            info = '<div class="form-container">';
-            header = '<h3 class="custom-title"> See how much you could be saving </h3>';
+
+            info = '<div class="row">';
+            info += '<div class="col-xs-12">';
+            info += '<div class="form-container">';
+            // header = '<h3 class="custom-title"> See how much you could be saving </h3>';
+            info += '<h3 class="custom-title">See how much you could be saving</h3>';
             info += '<div class="row">';
             info += '<div class="col-xs-4">';
             info += '<p class="info-title"> Car </p>' + '<p class="info-title info-title-green">' + this.step_data['car_year'] + ' ' + this.step_data['car_make'] + ' ' + this.step_data['car_model'] + '</p>';
@@ -352,35 +447,62 @@
             info += '<p class="info-title"> Current Carrier </p>' + '<p class="info-title info-title-green">' + this.step_data['inc_company'] + '</p>';
             info += '</div>';
             info += '</div>';
-            header_2 = '<h4 class="custom-small-title"> Try how much you could save </h3>';
+            // header_2 = '<h4 class="custom-small-title"> Try how much you could save </h3>';
 
             discount_services = "<div class='discount-services' style='display: inline-block;'> </div>";
             other_company_list = this.inc_company;
             delete other_company_list[this.step_data['inc_company']];
 
-            other_com = "<p style='margin: 0 0 8px;'> Select other insurance company </p>" + this._select_field(other_company_list, 'other_company', 'other_company', 'other_company', 'Select', '');
+            other_com = "<p class='custom-small-title'> Select a company </p>" + this._select_field(other_company_list, 'other_company', 'other_company', 'other_company', 'Select', '');
             com_result = this._get_compare_result(this.step_data['inc_premium']);
 
-            container_width = $('#' + this._frameContainerId).width();
-            if (container_width < 330) {
-                width = '100%';
-            }
-            else {
-                width = '50%';
-            }
-            html = header + info + header_2;
-            html += '<div style="position: relative;"><div style="width: ' + width + '; float: left; min-width: 160px; margin-top: 10px;">' + other_com + discount_services + '</div>';
-            html += '<div style="width: ' + width + '; float: right; min-width: 160px; margin-top: 10px;">' + com_result + '</div><div style="clear: both"></div></div>';
-            html += '<div style="text-align: center; margin: 18px 0 10px;"><a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue">Check rates</a></div>';
+            // container_width = $('#' + this._frameContainerId).width();
+            // if (container_width < 330) {
+            //     width = '100%';
+            // }
+            // else {
+            //     width = '50%';
+            // }
+            html = info;
+            html += '<div style="position: relative;"><div style="width: 100%; float: left; min-width: 160px; margin-top: 10px;">' + other_com + discount_services + '</div>';
+            html += '<div style="display: none; float: right; min-width: 160px; margin-top: 10px;">' + com_result + '</div><div style="clear: both"></div></div>';
+            html += '<div style="display: none; text-align: center; margin: 18px 0 10px;"><a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue">Check rates</a></div>';
             html += '</div>';
 
-            html += '<div class="premium-container text-center">';
+            html += '<div class="premium-container text-center hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$' + monthly + '</span>';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
-            html += '<img class="premium-img" src="images/money.png"><span class="premium-number" id="lead-monthly-premium">$</span>';
+            html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number" id="lead-monthly-premium"></span>';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
-            html += '<img class="premium-img" src="images/savings.png"><span class="premium-number" id="lead-premium-savings">%</span>';
+            html += '<img class="premium-img" src="images/savings.png"><span class="premium-number" id="lead-premium-savings"></span><span class="premium-number">%</span>';
+            html += '<p style="font-size: 20px; font-weight: bold; color: white;">Next step, compare actual rates!</p>';
+            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 28px; font-weight: bold; width: 340px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white;">Get personalized quote</button></a>';
+            html += '</div>';
+            html += '</div>';
+            html += '</div>';
+
+            // mobile
+
+            html += '<div class="row visible-xs text-center">';
+            html += '<div class="mobile-premium-container">';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/dollar.png">';
+            html += '<h5 class="custom-small-title">Your current premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/money.png">';
+            html += '<h5 class="custom-small-title">Your possible premium</h5>';
+            html += '<span class="premium-number">$---</span>';
+            html += '</div>';
+            html += '<div class="col-xs-4">';
+            html += '<img class="premium-img" src="images/savings.png">';
+            html += '<h5 class="custom-small-title" >Your possible saving</h5>';
+            html += '<span class="premium-number">--%</span>';
+            html += '</div>';
+            html += '</div>';
+
             html += '</div>';
 
             return this._frame_template('4', 'insurance_compare', html);
@@ -389,20 +511,20 @@
         _get_compare_result: function (amount) {
             monthly = parseFloat(amount);
             yearlly = monthly * 12.0;
-            html = '<div style="width: 100%; background-color: #5782b6; border-radius: 5px; padding: 10px;">';
-            html += '<p style="font-size: 18px; font-weight: bold; margin: 0; color: #fff;">Your current premium</p>';
-            html += '<p style="font-size: 20px; font-weight: bold; margin: 0; color: #fff">$' + monthly.toFixed(2)
-                + '<span style="font-size: 14px; color: #dbdbdb"> /monthly</span></p>';
-            html += '<p style="color: #dbdbdb; margin: 0;"> (or $' + yearlly.toFixed(2) + ' /annually) </p>';
-            html += '<div id="lead-premium-savings-box" style="display: none">';
-            html += '<p style="font-size: 18px; font-weight: bold; margin: 6px 0 0; color: #fff;">Your possible premium</p>';
-            html += '<p style="font-size: 22px; color: #a7fafd; font-weight: bold; margin: 0;">$<span style="font-size: 22px;color: #a7fafd;" id="lead-monthly-premium"></span><span style="font-size: 14px; color: #dbdbdb"> /monthly</span></p>';
-            html += '<p style="color: #dbdbdb; margin: 0;"> (or $<span style="color: #dbdbdb;" id="lead-yearly-premium"></span> /annually) </p>';
-            html += '<p style="font-size: 18px; font-weight: bold; margin: 6px 0 0; color: #fff;">Your possible savings</p>';
-            html += '<p style="font-size: 20px; font-weight: bold; margin: 0; color: #fff"><span style="font-size: 20px; color: #fff" id="lead-premium-savings"></span>%</p>';
-            html += '</div></div>';
+            // html = '<div style="width: 100%; background-color: #5782b6; border-radius: 5px; padding: 10px;">';
+            // html += '<p style="font-size: 18px; font-weight: bold; margin: 0; color: #fff;">Your current premium</p>';
+            // html += '<p style="font-size: 20px; font-weight: bold; margin: 0; color: #fff">$' + monthly.toFixed(2)
+            //     + '<span style="font-size: 14px; color: #dbdbdb"> /monthly</span></p>';
+            // html += '<p style="color: #dbdbdb; margin: 0;"> (or $' + yearlly.toFixed(2) + ' /annually) </p>';
+            // html += '<div id="lead-premium-savings-box" style="display: none">';
+            // html += '<p style="font-size: 18px; font-weight: bold; margin: 6px 0 0; color: #fff;">Your possible premium</p>';
+            // // html += '<p style="font-size: 22px; color: #a7fafd; font-weight: bold; margin: 0;">$<span style="font-size: 22px;color: #a7fafd;" id="lead-monthly-premium"></span><span style="font-size: 14px; color: #dbdbdb"> /monthly</span></p>';
+            // html += '<p style="color: #dbdbdb; margin: 0;"> (or $<span style="color: #dbdbdb;" id="lead-yearly-premium"></span> /annually) </p>';
+            // html += '<p style="font-size: 18px; font-weight: bold; margin: 6px 0 0; color: #fff;">Your possible savings</p>';
+            // // html += '<p style="font-size: 20px; font-weight: bold; margin: 0; color: #fff"><span style="font-size: 20px; color: #fff" id="lead-premium-savings"></span>%</p>';
+            // html += '</div></div>';
 
-            return html;
+            // return html;
         },
 
         _get_discount_services: function (options) {
@@ -414,13 +536,14 @@
                 5: {text: '5+ Family', weight: 7.2},
                 6: {text: 'Air bag', weight: 4}
             },
-            html = '<p style="margin: 0 0 6px;"> Check discounts to see the possible savings: </p>';
+            html = '<p class="custom-small-title"> Check discounts to see the possible savings </p>';
             $.each(discounts, function (key, value) {
-                html += '<div style="display: inline-flex;">';
+                html += '<div class="checkbox" style="display: inline-flex; font-size: 20px; font-family: "Open Sans";">';
                 html += '<input type="checkbox" class="check-discount regular-checkbox" id="lead-discount-' + key + '" value="' + value.weight + '">';
                 html += '<label class="regular-checkbox-label" for="lead-discount-' + key + '"/>';
                 html += '<span style="font-weight: normal;"> ' + value.text + '</span></div><br/>';
             });
+            html += '<img src="images/3min.png" style="float:right; margin-top: -30px;">';
             return html;
         },
 
@@ -513,7 +636,7 @@
 
             $(document).off("change", other_company).on("change", other_company, function () {
                 $('.discount-services').html($.autolead._get_discount_services());
-                $('#lead-premium-savings-box').hide();
+                // $('#lead-premium-savings-box').hide();
             });
 
             $(document).off("click", this.steps['step_1']['button_id']).on("click", this.steps['step_1']['button_id'], function () {
@@ -542,10 +665,10 @@
                 }, 0);
                 current_premium = parseFloat(step_data['inc_premium']);
                 discounted_premium = current_premium - ( current_premium * (sum / 100.0));
-                $('#lead-monthly-premium').html(discounted_premium.toFixed(2));
+                $('#lead-monthly-premium').html(discounted_premium.toFixed(0));
                 $('#lead-yearly-premium').html((discounted_premium * 12.0).toFixed(2));
                 $('#lead-premium-savings').html(sum);
-                $('#lead-premium-savings-box').show();
+                // $('#lead-premium-savings-box').show();
             });
         },
 
