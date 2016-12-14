@@ -194,10 +194,11 @@
             frame += '<style>';
             frame += '.lead-frame-wrapper {' + style + 'color: #333; font-size: 14px; font-family: "Lato", Helvetica, Arial, sans-serif;}';
             frame += '.lead-frame-wrapper * { box-sizing: border-box; } ';
-            frame += '.lead-frame-container { width: 100%; background-color: #f6f6f6;}';
             frame += '.lead-frame-wrapper .container-fluid { padding: 0; }';
+            frame += '.lead-frame-container { width: 100%; background-color: #f6f6f6;}';
+            frame += '.lead-frame-container .checkbox-layout { -moz-column-count:2; -webkit-column-count:2; column-count:2; }';
             frame += '.lead-frame-container .form-container { padding-top: 33px; padding-left: 54px; position: relative;}';
-            frame += '.lead-frame-container .premium-container { text-align: center; background: url("images/green-background.png") no-repeat center; background-size: 100% 100%; padding-top: 50px; padding-bottom: 250px;}';
+            frame += '.lead-frame-container .premium-container { text-align: center; background: url("images/green-background.png") no-repeat center; background-size: 100% 100%; padding-top: 50px; padding-bottom: 250px; min-width: 45rem;}';
             frame += '.lead-frame-container .mobile-premium-container { width: 100%; height: 450px; padding: 10px; background: url("images/mobile-green-background.png") no-repeat center;  }';
             frame += '.lead-frame-container .premium-number { font-weight: bold; font-size: 50px; color: #ffffff; }';
             frame += '.lead-frame-container .premium-img { margin-bottom: 27px; margin-right: 19px;}';
@@ -209,15 +210,15 @@
             frame += '.lead-frame-container select { font-size: 20px; font-family: open-sans; color: #b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 15px; width: 100%; border-radius: 6px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; height: 55px; background: white url("images/down-arrow.png") no-repeat scroll 100% center / 12% auto; }';
             frame += '.lead-frame-container .inc_premium {#b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 19px; width: 100%; border-radius: 8px; }';
             frame += '.lead-frame-container input[type=text] { width: 100%; max-width: 271px; margin-bottom: 8px; height: 55px; padding: 4px 6px; } ';
-            frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; padding: 10px 25px; width: 126px; height: 50px; float: left; text-decoration: none; position: absolute; bottom: 18px; left: 5.5%; }';
+            frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; padding: 10px 25px; width: 126px; height: 50px; float: left; text-decoration: none; position: absolute; bottom: 18px; left: 4%; }';
             frame += '.lead-frame-container .align-right { float: right; } .lead-frame-container .align-left { float: left; } ';
-            frame += '.lead-frame-container .discount-services { padding-top: 15px; -moz-column-count:2; -webkit-column-count:2; column-count:2;}';
+            frame += '.lead-frame-container .discount-services { padding-top: 15px;}';
             frame += '.lead-frame-container label.regular-checkbox-label { display: inline; } .lead-frame-container .regular-checkbox { display: none; }';
-            frame += '.lead-frame-container .regular-checkbox + label { background-color: white; border: 1px solid #cccccc; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding: 9px; display: inline-block; position: relative; margin: 0 7px 5px 5px; } ';
+            frame += '.lead-frame-container .regular-checkbox + label { background-color: white; border: 1px solid #cccccc; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05); padding: 9px; display: inline-block; position: relative; margin: 0 7px -3px 5px; } ';
             frame += '.lead-frame-container .regular-checkbox + label:active, .lead-frame-container .regular-checkbox:checked + label:active { box-shadow: 0 1px 3px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label { background-color: #e9ecee; border: 1px solid #adb8c0; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); color: #99a1a7; } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label:after { content: "\u2714"; font-size: 14px; position: absolute; top: 0px; left: 2px; color: #99a1a7; } ';
-            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 768px) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px 10px; width: 100%; margin-bottom: 0; position: relative; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; background-size: 100% 100%; } .lead-frame-container .premium-img { margin: 105px 0 0 5%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 10 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { float: left; position: absolute; bottom: 270px; left: 3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .discount-services {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
+            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 768px) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px 10px; width: 100%; margin-bottom: 0; position: relative; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; background-size: 100% 100%; } .lead-frame-container .premium-img { margin: 105px 0 0 5%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 10 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { float: left; position: absolute; bottom: 270px; left: 3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .checkbox-layout {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
             frame += '</style>';
             $(target).html(frame);
         },
@@ -487,8 +488,8 @@
             html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number lead-monthly-premium"></span>';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
             html += '<img class="premium-img" src="images/savings.png"><span class="premium-number lead-premium-savings"></span><span class="premium-number">%</span>';
-            html += '<p style="font-size: 20px; font-weight: bold; color: white;">Next step, compare actual rates!</p>';
-            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 28px; font-weight: bold; width: 340px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white;">Get personalized quote</button></a>';
+            html += '<p style="font-size: 20px; font-weight: bold; color: white; margin-top: 140px;">Next step, compare actual rates!</p>';
+            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 28px; font-weight: bold; width: 341px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white;">Get personalized quote</button></a>';
             html += '</div>';
             html += '</div>';
             html += '</div>';
@@ -555,15 +556,17 @@
             html = '<p class="custom-small-title"> Check discounts to see the possible savings </p>';
             html += '<div class="row">';
             html += '<div class="col-xs-12">';
+            html += '<div class="form-group checkbox-layout" style="margin-top: 10px;">';
             $.each(discounts, function (key, value) {
-                html += '<div class="checkbox" style="display: inline-flex; font-size: 20px; font-family: "Open Sans";">';
+                html += '<div style=" font-size: 20px; font-family: Open Sans;">';
                 html += '<input type="checkbox" class="check-discount regular-checkbox" id="lead-discount-' + key + '" value="' + value.weight + '">';
                 html += '<label class="regular-checkbox-label" for="lead-discount-' + key + '"/>';
                 html += '<span style="font-weight: normal;"> ' + value.text + '</span></div>';
             });
-            // html += '<img src="images/3min.png" style="float:right; margin-top: -30px;">';
             html += '</div>';
             html += '</div>';
+            html += '</div>';
+            html += '<img class="hidden-xs" src="images/3min.png" style="position: absolute; right: -7%; top: 253px; ">';
             return html;
         },
 
