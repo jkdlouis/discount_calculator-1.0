@@ -195,17 +195,17 @@
             frame += '.lead-frame-wrapper {' + style + 'color: #333; font-size: 14px; font-family: "Lato", Helvetica, Arial, sans-serif;}';
             frame += '.lead-frame-wrapper * { box-sizing: border-box; } ';
             frame += '.lead-frame-wrapper .container-fluid { padding: 0; }';
-            frame += '.lead-frame-container { width: 100%; background-color: #f6f6f6;}';
+            frame += '.lead-frame-container { overflow: hidden; width: 100%; background-color: #f6f6f6;}';
             frame += '.lead-frame-container .checkbox-layout { -moz-column-count:2; -webkit-column-count:2; column-count:2; }';
             frame += '.lead-frame-container .form-container { padding-top: 33px; padding-left: 54px; position: relative;}';
-            frame += '.lead-frame-container .premium-container { text-align: center; background: url("images/green-background.png") no-repeat center; background-size: 100% 100%; padding-top: 50px; padding-bottom: 250px; min-width: 45rem;}';
+            frame += '.lead-frame-container .premium-container { text-align: center; background: url("images/green-background.png") no-repeat center; background-size: 100% 100%; padding: 50px 0 26rem 0; min-width: 45rem;}';
             frame += '.lead-frame-container .mobile-premium-container { width: 100%; height: 450px; padding: 10px; background: url("images/mobile-green-background.png") no-repeat center;  }';
             frame += '.lead-frame-container .premium-number { font-weight: bold; font-size: 50px; color: #ffffff; }';
             frame += '.lead-frame-container .premium-img { margin-bottom: 27px; margin-right: 19px;}';
             frame += '.lead-frame-container .custom-title { font-family: "Lato"; font-size: 50px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
             frame += '.lead-frame-container .title-slogan { font-size: 20px; font-weight: lighter; color: #878787; line-height: 1.5; margin-bottom: 35px; }';
-            frame += '.lead-frame-container .info-title { font-size: 20px; font-weight: bold; color: #878787; line-height: 1.5; margin-bottom: 15px; margin-top: 0; }';
-            frame += '.lead-frame-container .info-title-green {color: #37c7b4;}';
+            frame += '.lead-frame-container .info-title { font-size: 20px; font-weight: lighter; color: #878787; line-height: 1.5; margin-bottom: 5px; margin-top: 0; }';
+            frame += '.lead-frame-container .info-title-green {color: #37c7b4; font-weight: bold; margin-bottom: 55px; }';
             frame += '.lead-frame-container .custom-small-title { font-size: 20px; font-weight: bold; line-height: 1.1; margin-bottom: 15px; color: #292929; } ';
             frame += '.lead-frame-container select { font-size: 20px; font-family: open-sans; color: #b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 15px; width: 100%; border-radius: 6px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; height: 55px; background: white url("images/down-arrow.png") no-repeat scroll 100% center / 12% auto; }';
             frame += '.lead-frame-container .inc_premium {#b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 19px; width: 100%; border-radius: 8px; }';
@@ -218,7 +218,7 @@
             frame += '.lead-frame-container .regular-checkbox + label:active, .lead-frame-container .regular-checkbox:checked + label:active { box-shadow: 0 1px 3px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label { background-color: #e9ecee; border: 1px solid #adb8c0; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); color: #99a1a7; } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label:after { content: "\u2714"; font-size: 14px; position: absolute; top: 0px; left: 2px; color: #99a1a7; } ';
-            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 768px) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px 10px; width: 100%; margin-bottom: 0; position: relative; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; background-size: 100% 100%; } .lead-frame-container .premium-img { margin: 105px 0 0 5%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 10 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { float: left; position: absolute; bottom: 270px; left: 3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .checkbox-layout {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
+            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 768px) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px 10px; width: 100%; margin-bottom: 0; position: relative; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; background-size: 100% 100%; } .lead-frame-container .premium-img { margin: 105px 0 0 5%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 20px 0 10px 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { float: left; position: absolute; bottom: 270px; left: 3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .checkbox-layout {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
             frame += '</style>';
             $(target).html(frame);
         },
@@ -327,13 +327,14 @@
         },
 
         _state_frame: function (inst) {
-
+            carYear = this.step_data['car_year'];
+            console.log(carYear);
             html = '<div class="row">';
             html += '<div class="col-xs-12 col-sm-7">';
             html += '<form class="form-inline form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<h6 class="info-title">Your vehicle</h6>';
-            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">' + this.step_data["car_year"] + " " + this.step_data["car_make"] + " " + this.step_data["car_model"] + '</h6>';
+            html += '<p>' + carYear + '</p>';
             html += '<h4 class="custom-small-title" style="margin-top: 56px;">Where do you live?</h4>';
             car_state = this._select_field(this.car_state, 'car_state', 'car_state', 'car_state', 'Select State', '');
             html += '<div>' + car_state + '</div>';
@@ -387,11 +388,11 @@
             html += '<form class="form-inline form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<div class="row">';
-            html += '<div class="col-xs-4">' + '<h6 class="info-title">Your vehicle</h6>' ;
-            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;"></h6>' + '</div>';
+            html += '<div class="col-xs-4">' + '<h6 class="info-title">Your vehicle</h6>';
+            html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">' +  this.step_data['car_year'] + ' ' + this.step_data['car_make'] + ' ' + this.step_data['car_model'] + '</h6>' + '</div>';
             html += '<div class="col-xs-4">';
             html += '<h6 class="info-title">State</h6>';
-            html += '<h6 class="info-title info-title-green" style="margin-top: 0;"></h6>' + '</div>';
+            html += '<h6 class="info-title info-title-green" style="margin-top: 0;">' + this.step_data['car_state'] + '</h6>' + '</div>';
             html += '</div>';
             inc_company = this._select_field(this.inc_company, 'inc_company', 'inc_company', 'inc_company', 'Select', '');
             premium = this._text_field('inc_premium', 'inc_premium', 'inc_premium', '');
@@ -447,7 +448,7 @@
             info += '<h3 class="custom-title">See how much you could be saving</h3>';
             info += '<div class="row">';
             info += '<div class="col-xs-4">';
-            info += '<p class="info-title"> Car </p>' + '<p class="info-title info-title-green">' + this.step_data['car_year'] + ' ' + this.step_data['car_make'] + ' ' + this.step_data['car_model'] + '</p>';
+            info += '<p class="info-title"> Your vehicle </p>' + '<p class="info-title info-title-green">' + this.step_data['car_year'] + ' ' + this.step_data['car_make'] + ' ' + this.step_data['car_model'] + '</p>';
             info += '</div>';
             info += '<div class="col-xs-4">';
             info += '<p class="info-title"> State</p>' + '<p class="info-title info-title-green">' + this.step_data['car_state'] + '</p>';
@@ -481,13 +482,13 @@
 
 
             html += '<div class="col-xs-12 col-sm-5">';
-            html += '<div class="premium-container text-center hidden-xs">';
+            html += '<div class="premium-container text-center hidden-xs" style="padding-bottom: 50px;">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$' + monthly + '</span>';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
-            html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number lead-monthly-premium"></span>';
+            html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number lead-monthly-premium switch-content"></span>';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
-            html += '<img class="premium-img" src="images/savings.png"><span class="premium-number lead-premium-savings"></span><span class="premium-number">%</span>';
+            html += '<img class="premium-img" src="images/savings.png"><span class="premium-number lead-premium-savings switch-content"></span><span class="premium-number">%</span>';
             html += '<p style="font-size: 20px; font-weight: bold; color: white; margin-top: 140px;">Next step, compare actual rates!</p>';
             html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 28px; font-weight: bold; width: 341px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white;">Get personalized quote</button></a>';
             html += '</div>';
@@ -506,12 +507,12 @@
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/money.png">';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
-            html += '<span class="premium-number">$</span><span class="premium-number lead-monthly-premium"></span>';
+            html += '<span class="premium-number">$</span><span class="premium-number lead-monthly-premium switch-content"></span>';
             html += '</div>';
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/savings.png">';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
-            html += '<span class="premium-number lead-premium-savings"></span><span class="premium-number">%</span>';
+            html += '<span class="premium-number lead-premium-savings switch-content"></span><span class="premium-number">%</span>';
             html += '</div>';
             html += '<div class="row"><div class="col-xs-12">';
             html += '<p style="font-size: 15px; font-weight: bold; color: white; margin-top: 10px;">Next step, compare actual rates!</p>';
@@ -558,7 +559,7 @@
             html += '<div class="col-xs-12">';
             html += '<div class="form-group checkbox-layout" style="margin-top: 10px;">';
             $.each(discounts, function (key, value) {
-                html += '<div style=" font-size: 20px; font-family: Open Sans;">';
+                html += '<div style=" font-size: 20px; font-family: Open Sans; margin-bottom: 15px;">';
                 html += '<input type="checkbox" class="check-discount regular-checkbox" id="lead-discount-' + key + '" value="' + value.weight + '">';
                 html += '<label class="regular-checkbox-label" for="lead-discount-' + key + '"/>';
                 html += '<span style="font-weight: normal;"> ' + value.text + '</span></div>';
@@ -566,7 +567,7 @@
             html += '</div>';
             html += '</div>';
             html += '</div>';
-            html += '<img class="hidden-xs" src="images/3min.png" style="position: absolute; right: -7%; top: 253px; ">';
+            html += '<img class="img-responsive hidden-xs" src="images/3min.png" style="position: absolute; right: -5%; top: 207px; ">';
             return html;
         },
 
@@ -606,7 +607,7 @@
             car_make = this.steps['step_1']['fields']['2']['id'];
             car_model = this.steps['step_1']['fields']['3']['id'];
             other_company = this.steps['step_4']['fields']['1']['id'];
-            step_data = this.step_data
+            step_data = this.step_data;
             $(document).off("change", car_year).on("change", car_year, function () {
                 selected_year = $(this).val();
                 var makes = {};
@@ -660,6 +661,7 @@
             $(document).off("change", other_company).on("change", other_company, function () {
                 $('.discount-services').html($.autolead._get_discount_services());
                 // $('#lead-premium-savings-box').hide();
+                $('.switch-content').hide();
             });
 
             $(document).off("click", this.steps['step_1']['button_id']).on("click", this.steps['step_1']['button_id'], function () {
@@ -692,6 +694,7 @@
                 $('.lead-yearly-premium').html((discounted_premium * 12.0).toFixed(2));
                 $('.lead-premium-savings').html(sum);
                 // $('#lead-premium-savings-box').show();
+                $('.switch-content').show();
             });
         },
 
