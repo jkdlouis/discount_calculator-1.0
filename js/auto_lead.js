@@ -194,7 +194,7 @@
             frame += '<style>';
             frame += '.lead-frame-wrapper {' + style + 'color: #333; font-size: 14px; font-family: "Lato", Helvetica, Arial, sans-serif;}';
             frame += '.lead-frame-wrapper * { box-sizing: border-box; } ';
-            frame += '.lead-frame-container { overflow-x: hidden; width: 100%; height: 100%; background-color: #f6f6f6; }';
+            frame += '.lead-frame-container { overflow-x: hidden; width: 100%; background-color: #f6f6f6; }';
             frame += '.lead-frame-container .form-container {width: 55%; float:left; padding-top: 33px; padding-left: 54px;}';
             frame += '.lead-frame-container .premium-container { width: 45%; height: 100%; float: right; text-align: center; background: url("images/green-background.png") no-repeat center; background-size: cover; padding: 55px 120px; }';
             frame += '.lead-frame-container .mobile-premium-container { width: 100%; height: 450px; padding: 10px; background: url("images/mobile-green-background.png") no-repeat center;  }';
@@ -205,7 +205,7 @@
             frame += '.lead-frame-container .info-title { font-size: 20px; font-weight: bold; color: #878787; line-height: 1.5; margin-bottom: 15px; margin-top: 0; }';
             frame += '.lead-frame-container .info-title-green {color: #37c7b4;}';
             frame += '.lead-frame-container .custom-small-title { font-size: 20px; font-weight: bold; line-height: 1.1; margin-bottom: 15px; color: #292929; } ';
-            frame += '.lead-frame-container select { font-size: 20px; font-family: open-sans; color: #b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 15px; width: 100%; border-radius: 8px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; height: 55px; background: white url("images/down-arrow.png") no-repeat scroll 100% center / 12% auto; }';
+            frame += '.lead-frame-container select { font-size: 20px; font-family: open-sans; color: #b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 15px; width: 100%; border-radius: 6px; -webkit-appearance: none; -moz-appearance: none; appearance: none; cursor: pointer; height: 55px; background: white url("images/down-arrow.png") no-repeat scroll 100% center / 12% auto; }';
             frame += '.lead-frame-container .inc_premium {#b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 19px; width: 100%; border-radius: 8px; }';
             frame += '.lead-frame-container input[type=text] { width: 100%; max-width: 271px; margin-bottom: 8px; height: 55px; padding: 4px 6px; } ';
             frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; margin: 24px 0 24px 3%; padding: 10px 25px; width: 126px; height: 50px; float: left; text-decoration: none; }';
@@ -216,7 +216,7 @@
             frame += '.lead-frame-container .regular-checkbox + label:active, .lead-frame-container .regular-checkbox:checked + label:active { box-shadow: 0 1px 3px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label { background-color: #e9ecee; border: 1px solid #adb8c0; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); color: #99a1a7; } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label:after { content: "\u2714"; font-size: 14px; position: absolute; top: 0px; left: 2px; color: #99a1a7; } ';
-            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 450px)and (orientation: portrait) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container .form-container {width: 100%; padding: 10px; } .lead-frame-container .mobile-premium-container { margin-top: 10px; height: 272px; } .lead-frame-container .premium-img { margin-bottom: 0; margin-top: 65px; } .lead-frame-container .premium-number {font-size: 40px;} }';
+            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 450px) and (orientation: portrait) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px; width: 100%; margin-bottom: 0; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; } .lead-frame-container .premium-img { margin: 105px 0 0 16%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 10 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { margin: 10px auto; float: left; position: relative; bottom: 330px; left: -3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .discount-services {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
             frame += '</style>';
             $(target).html(frame);
         },
@@ -251,7 +251,7 @@
             var style = 'display: block;';
             if (step > 1)
                 style = 'display: none;';
-            temp = '<div id="step_' + step + '" class="step-wrapper" style="position: relative; margin-bottom: 50px; ' + style + '">';
+            temp = '<div id="step_' + step + '" class="step-wrapper" style="position: relative; ' + style + '">';
             temp += html;
             temp += '<div style="position: relative; padding: 0 15px; text-align: center;">';
             // if (step > 1)
@@ -275,7 +275,8 @@
 
             html = '<div class="row">';
             html += '<div class="col-xs-12">';
-            html += '<div class="form-container">';
+            html += '<form class="form-inline form-container">';
+            html += '<div class="form-group">';
             html += '<p class="custom-title">See how much you could be saving</p>';
             html += '<h5 class="title-slogan">Compare your current auto insurance rate with other companies in your area and <br> see if you qualify for any discounts!</h5>';
             html += '<h4 class="custom-small-title">What car do you drive?</h4>';
@@ -284,6 +285,8 @@
             car_model = this._select_field(this.car_model, 'car_model', 'car_model', 'car_model', 'Select Model', 'cursor: not-allowed;');
             html += '<div>' + car_year + car_make + car_model + '</div>';
             html += '</div>';
+            // html += this._frame_template('1', 'car_info', html);
+            html += '</form>';
 
             html += '<div class="premium-container hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
@@ -297,9 +300,8 @@
             html += '</div>';
 
             // mobile
-            html += '<div class="row visible-xs text-center">';
-
-            html += '<div class="mobile-premium-container">';
+            html += '<div class="row visible-xs">';
+            html += '<div class="mobile-premium-container text-center">';
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/dollar.png">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
@@ -325,14 +327,14 @@
 
             html = '<div class="row">';
             html += '<div class="col-xs-12">';
-            html += '<div class="form-container">';
+            html += '<form class="form-inline form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<h6 class="info-title">Your vehicle</h6>';
             html += '<h6 class="info-title info-title-green" style=" text-align: left; margin-top: 0;">' + this.step_data["car_year"] + " " + this.step_data["car_make"] + " " + this.step_data["car_model"] + '</h6>';
             html += '<h4 class="custom-small-title" style="margin-top: 56px;">Where do you live?</h4>';
             car_state = this._select_field(this.car_state, 'car_state', 'car_state', 'car_state', 'Select State', '');
             html += '<div>' + car_state + '</div>';
-            html += '</div>';
+            html += '</form>';
 
 
             html += '<div class="premium-container hidden-xs">';
@@ -348,8 +350,8 @@
 
             // mobile
 
-            html += '<div class="row visible-xs text-center">';
-            html += '<div class="mobile-premium-container">';
+            html += '<div class="row visible-xs">';
+            html += '<div class="mobile-premium-container text-center">';
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/dollar.png">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
@@ -368,8 +370,9 @@
             html += '</div>';
 
             html += '</div>';
-
             return this._frame_template('2', 'car_state', html);
+
+
         },
 
 
@@ -377,7 +380,7 @@
 
             html = '<div class="row">';
             html += '<div class="col-xs-12">';
-            html += '<div class="form-container">';
+            html += '<form class="form-inline form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<div class="row">';
             html += '<div class="col-xs-4">' + '<h6 class="info-title">Your vehicle</h6>' ;
@@ -391,7 +394,7 @@
             html += '<div>' +
                 "<p class='custom-small-title'> Your current insurance company </p>" + inc_company +
                 "<p class='custom-small-title'>Your current premium (per month)</p>" + premium + '</div>';
-            html += '</div>';
+            html += '</form>';
 
             html += '<div class="premium-container text-center hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
@@ -473,9 +476,9 @@
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$' + monthly + '</span>';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
-            html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number" id="lead-monthly-premium"></span>';
+            html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number lead-monthly-premium"></span>';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
-            html += '<img class="premium-img" src="images/savings.png"><span class="premium-number" id="lead-premium-savings"></span><span class="premium-number">%</span>';
+            html += '<img class="premium-img" src="images/savings.png"><span class="premium-number lead-premium-savings"></span><span class="premium-number">%</span>';
             html += '<p style="font-size: 20px; font-weight: bold; color: white;">Next step, compare actual rates!</p>';
             html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 28px; font-weight: bold; width: 340px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white;">Get personalized quote</button></a>';
             html += '</div>';
@@ -489,20 +492,25 @@
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/dollar.png">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
-            html += '<span class="premium-number">$---</span>';
+            html += '<span class="premium-number">$' + monthly + '</span>';
             html += '</div>';
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/money.png">';
             html += '<h5 class="custom-small-title">Your possible premium</h5>';
-            html += '<span class="premium-number">$---</span>';
+            html += '<span class="premium-number">$</span><span class="premium-number lead-monthly-premium"></span>';
             html += '</div>';
             html += '<div class="col-xs-4">';
             html += '<img class="premium-img" src="images/savings.png">';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
-            html += '<span class="premium-number">--%</span>';
+            html += '<span class="premium-number lead-premium-savings"></span><span class="premium-number">%</span>';
+            html += '</div>';
+            html += '<div class="row"><div class="col-xs-12">';
+            html += '<p style="font-size: 15px; font-weight: bold; color: white; margin-top: 10px;">Next step, compare actual rates!</p>';
+            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 15px; font-weight: bold; width: 210px ; height 50px; border-radius: 4px; padding: 5px 10px; border: none; background-color: #168abe; color: white; margin-bottom: 10px;">Get personalized quote</button></a>';
             html += '</div>';
             html += '</div>';
 
+            html += '</div>';
             html += '</div>';
 
             return this._frame_template('4', 'insurance_compare', html);
@@ -665,9 +673,9 @@
                 }, 0);
                 current_premium = parseFloat(step_data['inc_premium']);
                 discounted_premium = current_premium - ( current_premium * (sum / 100.0));
-                $('#lead-monthly-premium').html(discounted_premium.toFixed(0));
-                $('#lead-yearly-premium').html((discounted_premium * 12.0).toFixed(2));
-                $('#lead-premium-savings').html(sum);
+                $('.lead-monthly-premium').html(discounted_premium.toFixed(0));
+                $('.lead-yearly-premium').html((discounted_premium * 12.0).toFixed(2));
+                $('.lead-premium-savings').html(sum);
                 // $('#lead-premium-savings-box').show();
             });
         },
