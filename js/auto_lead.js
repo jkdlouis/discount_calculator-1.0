@@ -202,7 +202,8 @@
             frame += '.lead-frame-container .mobile-premium-container { width: 100%; height: 450px; padding: 10px; background: url("images/mobile-green-background.png") no-repeat center;  }';
             frame += '.lead-frame-container .premium-number { font-weight: bold; font-size: 50px; color: #ffffff; }';
             frame += '.lead-frame-container .premium-img { margin-bottom: 27px; margin-right: 19px;}';
-            frame += '.lead-frame-container .custom-title { font-family: "Lato"; font-size: 50px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
+            frame += '.lead-frame-container .three-min-img { position: absolute; right: -7%; top: 207px; }';
+            frame += '.lead-frame-container .custom-title { font-family: "Lato"; font-size: 45px; font-weight: lighter; margin: 5px 0 35px; color: #252525; text-align: left; } ';
             frame += '.lead-frame-container .title-slogan { font-size: 20px; font-weight: lighter; color: #878787; line-height: 1.5; margin-bottom: 35px; }';
             frame += '.lead-frame-container .info-title { font-size: 20px; font-weight: lighter; color: #878787; line-height: 1.5; margin-bottom: 5px; margin-top: 0; }';
             frame += '.lead-frame-container .info-title-green {color: #37c7b4; font-weight: bold; margin-bottom: 55px; }';
@@ -211,6 +212,8 @@
             frame += '.lead-frame-container .inc_premium {#b2b1b1; border: 1px solid #cccccc; margin: 9px 0; max-width: 548px; padding: 19px; width: 100%; border-radius: 8px; }';
             frame += '.lead-frame-container input[type=text] { width: 100%; max-width: 271px; margin-bottom: 8px; height: 55px; padding: 4px 6px; } ';
             frame += '.lead-frame-container .lead-frame-btn { background-color: #168abe; border: 1px solid #2e6da4; border-radius: 4px; color: #ffffff; cursor: pointer; font-size: 18px; font-weight: bold; padding: 10px 25px; width: 126px; height: 50px; float: left; text-decoration: none; position: absolute; bottom: 18px; left: 4%; }';
+            frame += '.lead-frame-container .learn-more-btn { font-size: 28px; font-weight: bold; width: 341px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white; }';
+            frame += '.lead-frame-container .next-step-text { font-size: 20px; font-weight: bold; color: white; margin-top: 140px; }';
             frame += '.lead-frame-container .align-right { float: right; } .lead-frame-container .align-left { float: left; } ';
             frame += '.lead-frame-container .discount-services { padding-top: 15px;}';
             frame += '.lead-frame-container label.regular-checkbox-label { display: inline; } .lead-frame-container .regular-checkbox { display: none; }';
@@ -218,7 +221,8 @@
             frame += '.lead-frame-container .regular-checkbox + label:active, .lead-frame-container .regular-checkbox:checked + label:active { box-shadow: 0 1px 3px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1); } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label { background-color: #e9ecee; border: 1px solid #adb8c0; box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1); color: #99a1a7; } ';
             frame += '.lead-frame-container .regular-checkbox:checked + label:after { content: "\u2714"; font-size: 14px; position: absolute; top: 0px; left: 2px; color: #99a1a7; } ';
-            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 768px) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px 10px; width: 100%; margin-bottom: 0; position: relative; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; background-size: 100% 100%; } .lead-frame-container .premium-img { margin: 105px 0 0 5%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 20px 0 10px 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { float: left; position: absolute; bottom: 270px; left: 3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .checkbox-layout {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
+            frame += '@media screen and (min-device-width: 300px) and (max-device-width: 767px) { .lead-frame-wrapper { width: 100%; padding: 0; } .lead-frame-container { overflow: hidden; height: auto;} .lead-frame-container .form-container {padding: 5px 10px; width: 100%; margin-bottom: 0; position: relative; } .lead-frame-container .mobile-premium-container { width: 100%; height: 330px; background-size: 100% 100%; } .lead-frame-container .premium-img { margin: 105px 0 0 5%;} .lead-frame-container .premium-number {font-size: 20px;} .lead-frame-container .custom-title { font-size: 35px; } .lead-frame-container .title-slogan { font-size: 18px; } .lead-frame-container .custom-small-title { font-size: 15px; margin: 20px 0 10px 0; } .lead-frame-container select { height: 40px; padding: 0; font-size: 15px; padding: 5px 10px; } .lead-frame-container .lead-frame-btn { float: left; position: absolute; bottom: 270px; left: 3%; height: 40px; width: 100px; padding: 5px; } .lead-frame-container .info-title { font-size: 15px; margin-bottom: 0; } .lead-frame-container input[type=text] { height: 40px; } .lead-frame-container .checkbox-layout {-moz-column-count:1; -webkit-column-count:1; column-count:1;} }';
+            frame += '@media screen and (min-device-width: 768px) and (max-device-width: 878px ) { .lead-frame-container .custom-title { font-size: 24px;  } .lead-frame-container .title-slogan { font-size: 13px; } .lead-frame-container .lead-frame-btn { bottom: 18px; left: 6%; } .lead-frame-container .custom-small-title { font-size: 15px; } .lead-frame-container .info-title { font-size: 15px; } .lead-frame-container .premium-number { font-size: 40px; } .lead-frame-container .checkbox-layout { column-count: 1; -moz-column-count: 1; -webkit-column-count: 1;} .lead-frame-container .learn-more-btn { font-size: 20px; padding: 12px 16px; width: 255px; } .lead-frame-container .next-step-text { margin-top: 225px; margin-right: 20px;} }';
             frame += '</style>';
             $(target).html(frame);
         },
@@ -276,7 +280,7 @@
             }
 
             html = '<div class="row">';
-            html += '<div class="col-xs-12 col-sm-7">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-7">';
             html += '<form class="form-inline form-container">';
             html += '<div class="form-group">';
             html += '<p class="custom-title">See how much you could be saving</p>';
@@ -290,7 +294,7 @@
             html += '</form>';
             html += '</div>';
 
-            html += '<div class="col-xs-12 col-sm-5">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-5">';
             html += '<div class="premium-container hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$</span>';
@@ -330,7 +334,7 @@
             carYear = this.step_data['car_year'];
             console.log(carYear);
             html = '<div class="row">';
-            html += '<div class="col-xs-12 col-sm-7">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-7">';
             html += '<form class="form-inline form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<h6 class="info-title">Your vehicle</h6>';
@@ -341,7 +345,7 @@
             html += '</form>';
             html += '</div>';
 
-            html += '<div class="col-xs-12 col-sm-5">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-5">';
             html += '<div class="premium-container hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$</span>';
@@ -384,7 +388,7 @@
         _insurance_frame: function (inst) {
 
             html = '<div class="row">';
-            html += '<div class="col-xs-12 col-sm-7">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-7">';
             html += '<form class="form-inline form-container">';
             html += '<h3 class="custom-title"> See how much you could be saving </h3>';
             html += '<div class="row">';
@@ -402,7 +406,7 @@
             html += '</form>';
             html += '</div>';
 
-            html += '<div class="col-xs-12 col-sm-5">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-5">';
             html += '<div class="premium-container text-center hidden-xs">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$</span>';
@@ -442,7 +446,7 @@
         _comparison_frame: function () {
 
             info = '<div class="row">';
-            info += '<div class="col-xs-12 col-sm-7">';
+            info += '<div class="col-xs-12 col-sm-6 col-md-7">';
             info += '<div class="form-container">';
             // header = '<h3 class="custom-title"> See how much you could be saving </h3>';
             info += '<h3 class="custom-title">See how much you could be saving</h3>';
@@ -481,7 +485,7 @@
             html += '</div>';
 
 
-            html += '<div class="col-xs-12 col-sm-5">';
+            html += '<div class="col-xs-12 col-sm-6 col-md-5">';
             html += '<div class="premium-container text-center hidden-xs" style="padding-bottom: 50px;">';
             html += '<h5 class="custom-small-title">Your current premium</h5>';
             html += '<img class="premium-img" src="images/dollar.png"><span class="premium-number">$' + monthly + '</span>';
@@ -489,8 +493,8 @@
             html += '<img class="premium-img" src="images/money.png"><span class="premium-number">$</span><span class="premium-number lead-monthly-premium switch-content"></span>';
             html += '<h5 class="custom-small-title" >Your possible saving</h5>';
             html += '<img class="premium-img" src="images/savings.png"><span class="premium-number lead-premium-savings switch-content"></span><span class="premium-number">%</span>';
-            html += '<p style="font-size: 20px; font-weight: bold; color: white; margin-top: 140px;">Next step, compare actual rates!</p>';
-            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 28px; font-weight: bold; width: 341px ; height 90px; border-radius: 4px; padding: 22px 26px; border: none; background-color: #168abe; color: white;">Get personalized quote</button></a>';
+            html += '<p class="next-step-text">Next step, compare actual rates!</p>';
+            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button class="learn-more-btn">Get personalized quote</button></a>';
             html += '</div>';
             html += '</div>';
             html += '</div>';
@@ -516,7 +520,7 @@
             html += '</div>';
             html += '<div class="row"><div class="col-xs-12">';
             html += '<p style="font-size: 15px; font-weight: bold; color: white; margin-top: 10px;">Next step, compare actual rates!</p>';
-            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button style="font-size: 15px; font-weight: bold; width: 210px ; height 50px; border-radius: 4px; padding: 5px 10px; border: none; background-color: #168abe; color: white; margin-bottom: 10px;">Get personalized quote</button></a>';
+            html += '<a href="https://smartfinancial.com/auto-insurance" target="_blank" class="btn-continue"><button class="learn-more-btn" style="font-size: 15px; font-weight: bold; width: 210px ; height 50px; border-radius: 4px; padding: 5px 10px; border: none; background-color: #168abe; color: white; margin-bottom: 10px;">Get personalized quote</button></a>';
             html += '</div>';
             html += '</div>';
 
@@ -567,7 +571,7 @@
             html += '</div>';
             html += '</div>';
             html += '</div>';
-            html += '<img class="img-responsive hidden-xs" src="images/3min.png" style="position: absolute; right: -5%; top: 207px; ">';
+            html += '<img class="img-responsive hidden-xs hidden-sm pull-right three-min-img" src="images/3min.png">';
             return html;
         },
 
